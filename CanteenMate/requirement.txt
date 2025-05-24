@@ -1,0 +1,8 @@
+langchain
+ollama
+mysql-connector-python
+qrcode
+smtplib
+email-validator
+dotenv
+requests
