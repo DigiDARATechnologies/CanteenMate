@@ -87,29 +87,30 @@ pip install -r requirements.txt
 ## Execute the following SQL:
 
 CREATE TABLE students (
-    id VARCHAR(50) PRIMARY KEY,
-    name VARCHAR(100),
-    phone VARCHAR(15),
-    email VARCHAR(100)
+    student_id INT AUTO_INCREMENT PRIMARY KEY,
+    student_name VARCHAR(100) NOT NULL,
+    student_email VARCHAR(100)
 );
 
 CREATE TABLE food_items (
-    item_name VARCHAR(100) PRIMARY KEY,
-    price DECIMAL(10,2)
+    item_id INT PRIMARY KEY,
+    item_name VARCHAR(50),
+    price DECIMAL(5,2),
+    stock INT
 );
 
 CREATE TABLE stock (
-    item_name VARCHAR(100) PRIMARY KEY,
+    item_id INT PRIMARY KEY,
+    item_name VARCHAR(50),
     quantity INT
 );
 
 CREATE TABLE orders (
     order_id INT AUTO_INCREMENT PRIMARY KEY,
-    student_id VARCHAR(50),
     items TEXT,
-    total_amount DECIMAL(10,2),
-    status VARCHAR(20),
-    FOREIGN KEY (student_id) REFERENCES students(id)
+    total_amount FLOAT,
+    status VARCHAR(50),
+    order_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 ## After creating table configure the database connection in `config.py` file.
     MYSQL_CONFIG = {
