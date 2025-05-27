@@ -113,12 +113,23 @@ create table stock (
    item_name varchar(100),
    quantity int
 );
+
+INSERT INTO stock (item_name, quantity) VALUES
+('Samosa', 20),
+('Sandwich', 20),
+('Cool Drink', 20),
+('Brownie', 20),
+('Veg Puff', 20),
+('Paneer Roll', 20),
+('Momos', 20);
+
 create table food_items (
    item_id int AUTO_INCREMENT PRIMARY KEY,
    item_name varchar(100),
    price decimal(10,2),
    stock int
 );
+
 INSERT INTO food_items (item_name, price, stock) VALUES
 ('Samosa', 2.50, 20),
 ('Sandwich', 4.00, 20),
