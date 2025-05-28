@@ -14,13 +14,13 @@ from langchain.memory import ConversationBufferMemory
 MYSQL_CONFIG = {
     "host": "localhost",
     "user": "root",
-    "password": "Vini@01",
-    "database": "canteenai"
+    "password": "", #paste your password
+    "database": "" # paste your database
 }
 SMTP_SERVER = 'smtp.gmail.com'
 SMTP_PORT = 587
-SENDER_EMAIL = 'vini535353@gmail.com'
-SENDER_PASSWORD = 'huci vdiu tvig nvep'  # Use Gmail App Password
+SENDER_EMAIL = '' #your mail
+SENDER_PASSWORD = ''  # Use Gmail App Password
 
 # LangChain LLM
 llm = Ollama(model="llama3")
