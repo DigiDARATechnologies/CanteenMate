@@ -148,9 +148,27 @@ INSERT INTO food_items (item_name, price, stock) VALUES
     }
 ## 5. Configure Email Settings
 
-📧 Use an App Password with your Gmail account.
+🔑 Steps to Generate App Password
 
-✅ Step-by-Step: Use Gmail App Password in Python Script
+1.Go to your Google Account Security page:
+
+2.Visit: https://myaccount.google.com/security
+
+3.Scroll down to "Signing in to Google" section.
+
+4.Click on "App passwords".
+
+5.You may need to sign in again.
+
+6.Under "Select app", choose the app you're using (e.g., Mail, or Other if it's custom).
+
+7.Under "Select device", choose the device you're using or name it manually.
+
+8.Click "Generate".
+
+9.Google will display a 16-character app password. Copy it — this is your app password.
+
+
 
 # 🔐 Step 1: Enable 2-Step Verification on your Google Account
 Go to: https://myaccount.google.com/security
